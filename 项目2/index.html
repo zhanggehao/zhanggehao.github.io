@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>个人站点</title>
+	<link rel="stylesheet" href="01.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/base.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/meiti.css">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		/* 播放器 */
+		.nav_tops {
+			width: 100%;
+			height: 50px;
+			margin-top: 0px 20px;
+			/* background-color: #9737ce; */
+			margin: 0 auto;
+			/* display: none; */
+			
+		}
+
+		#video {
+			
+			opacity: 0;
+		}
+
+		#video:hover .nav{
+			/* background-image: -webkit-linear-gradient(top, yellow 0%,rgb(255, 0, 234) 50%,yellow 90%,
+			transparent 20%,transparent 30%,transparent 20%); */
+			opacity: 0.5;
+			position: absolute !important;
+			top: 100px !important;
+		}
+		#video:hover .nav{
+			
+		}
+		.nav_tops:hover {
+			width: 25%;
+			height: 50%;
+			border-radius: 15px;
+			position: relative;
+			
+		}
+		.nav_tops:hover #ee {
+			opacity: 1;
+		}
+
+		/* 探照灯 */
+		.nav_bgc {
+			width: 100%;
+			height: 95px;
+			background: url(images/03.gif);
+		}
+
+		/* 轮播 */
+		.box {
+			width: 1419px;
+			height: 600px;
+			/* border: 1px solid black; */
+			position: relative;
+			margin: 30px auto;
+			/* perspective: 600px; */
+			transform: rotate(0deg);
+		}
+
+		.box .sub {
+			width: 20%;
+			height: 100%;
+			transform-style: preserve-3d;
+			position: absolute;
+			/* transition: all 1s ease 0s; */
+		}
+
+		.box .sub .content {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			/* border: 1px solid orchid; */
+		}
+
+		.controller {
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			top: 45%;
+			/* background-color: orchid; */
+		}
+
+		.controller .left_btn,
+		.controller .right_btn {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 50%;
+			position: absolute;
+			font-size: 50px;
+			background-color: lightgray;
+			opacity: 0.5;
+			cursor: pointer;
+			outline: none;
+		}
+
+		.controller .right_btn {
+			right: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top">
+		<div class="nav_tops">
+						
+			<video controls autoplay="false" width="100%" height="80%" loop id="ee">
+					<source id="src2" src="videos/徐梦圆-由你音乐榜样-徐梦圆《抱紧你》嗨翻，情歌电音完美结合震撼人心(蓝光).mp4">
+			</video>
+			<!-- <video controls autoplay="false" width="100%" height="80%" loop id="video">
+				<source id="src2" src="videos/徐梦圆 - Beach.mp3">
+			</video> -->
+		</div>
+		<div class="nav_bgc">
+
+		</div>
+		<div class="nav">
+			<div class="nav_tab">
+				<span class="nav_button1"></span>
+				<a href="./index.html" class="tab1">简介</a>
+				<a href="./product.html" class="tab2">作品</a>
+				<a href="#" class="tab3">产品</a>
+			</div>
+			<div class="nav_function">
+				<img src="images/search_icon.png">
+				<img src="images/function_icon.png" class="inn">
+			</div>
+
+		</div>
+		<div class="top_title">
+			<span>张葛皓个人Page</span>
+			<p>A fool thinks he's smart，A wise man knows he's a fool </p>
+		</div>
+		<!-- nnbv   42.0 -->
+		<div class="top_bj">
+			<!-- <img class="top_img" src="./images/001.jpg"> -->
+			<div class="box">
+				<div class="sub">
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+				<div class="sub">
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+				<div class="sub">
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+				<div class="sub">
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+				<div class="sub">
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+					<div class="content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="introduce">
+
+		<div class="introduce_title"><img src="images/title_icon.png"></div>
+		<div class="introduce_content1">
+			<sapn class="introduce_content1_span">
+				未来，爱眼光学将继续秉持“创造美好视界”的企业使命，为消费者提供更好的视觉感受，让消费者享受与全球同步的视感体验，倾力推动“中国眼镜，国际演绎”的全球发展战略，构筑行业技术交流平台，创造国际知名眼镜品牌，为中国眼镜行业发展贡献力量。
+			</sapn>
+			<ul>我的设计价值是：
+				<li>1、能够有效的解决问题。</li>
+				<li>2、设计资源的合情理利用。</li>
+				<li>3、有服务大众的同理心，创造搞笑、美观、环保、底价的产品。</li>
+				<li>4、对用户的思考。</li>
+			</ul>
+		</div>
+		<div class="line_01"></div>
+	</div>
+	<div class="kuang" id="kuang"">
+	
+			<!-- 左边盒子 -->
+			<div class=" neirong">
+		<p>欢迎</p>
+		<!-- 彩灯 -->
+		<div class="deng">
+			
+		</div>
+	</div>
+	<!-- 右边盒子	 -->
+	<div class="neirong-you">
+		<p>观看</p>
+		<div class="deng deng1">
+			
+		</div>
+	</div>
+	<!-- 缩放 -->
+	<div class="suofang" id="suofang">
+		<img src="images/02.jpg" alt="">
+	</div>
+	<!-- 个人资料 -->
+	<p id="zuo">大家好,我叫张葛皓,</p>
+	<div id="you">今年25爱好看电影</div>
+	<div id="you1">来自山西省忻州市</div>
+	<div id="you2">H5专业老师李辉</div>
+
+
+
+	</div>
+
+
+
+
+
+	<div class="footer">
+		<img src="images/footer_bj.png">
+		<div class="record">粤ICP备1512455537号-2</div>
+
+	</div>
+
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$('.product_tab a').click(function () {
+				$('.product_box').hide();
+				$('.product_tab span').removeClass('btspan');
+				$('.product_tab a').removeClass('bta');
+
+				$('#content' + $(this).attr('idx')).show();
+				$(this).find('span').addClass('btspan');
+				$(this).addClass('bta');
+			})
+		})
+
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#case1_button").mouseover(function () {
+				$("#case1_button").css("background-color", "#303030");
+				$("#case1_button").css("color", "#fff");
+			});
+			$("#case1_button").mouseout(function () {
+				$("#case1_button").css("background-color", "");
+				$("#case1_button").css("color", "#303030");
+			});
+		});
+	</script>
+</body>
+
+</html>
+<script>
+	kuang.onmouseout = function () {
+		kuang.style = "background: red";
+		you1.style = "transition: all 0.5s ease-in .1s;transform:translateY(550px);";
+		zuo.style = "transition: all 0.5s ease-in .1s;transform:translateY(550px);";
+		you.style = "transition: all 0.5s ease-in .1s;transform:translateY(550px);";
+		you2.style = "transition: all 0.5s ease-in .1s;transform:translateY(550px);";
+		suofang.style = "opacity: 0;transition: all 0.5s ease-in .1s;transform: scale(0.1);"
+	}
+	kuang.onmouseover = function () {
+		// kuang.style = "background: blue";
+		kuang.style = "background: url(images/01.gif);background-size:100% 100%";
+		// kuang.style = "backgroundSize:cover";
+		you1.style = "transition: all 1s ease-in 1s;transform:translateY(-550px);";
+		suofang.style = "opacity: 1;transition: all 1s ease-in .1s;transform: scale(0.7);";
+		zuo.style = "transition: all 1s ease-in 1s;transform:translateY(-550px);";
+		you.style = "transition: all 1s ease-in 1s;transform:translateY(-550px);";
+		you2.style = "transition: all 1s ease-in 1s;transform:translateY(-550px);";
+	}
+</script>
+<script>
+	$(".box .sub").each(function (i) {
+		$(this).css({ "left": i * 284 + "px", "transitionDelay": i * 0.2 + "s" });
+		$(this).children().each(function (index) {
+			$(this).css({
+				"background": "url(images/00" + (index + 1) + ".jpg) no-repeat",
+				"transform": "rotateX(" + index * 90 + "deg) translateZ(150px)",
+				"backgroundPosition": -280 * i + "px"
+			});
+		})
+	})
+	var timer = setInterval(moveFn, 2000);
+	var num = 0;
+	function moveFn() {
+		$(".box .sub").css({
+			"transform": "rotateX(" + (--num * 90) + "deg)"
+		});
+	}
+	$(".box").hover(function () {
+		clearInterval(timer);
+	}, function () {
+		timer = setInterval(moveFn(), 3000);
+	})
+	// visibility:可见性
+	// on visibilitychange
+	document.onvisibilitychange = function () {
+		if (document.visibilityState == "visible") {
+			timer = setInterval(moveFn(), 3000);
+			console.log("浏览器进来了")
+		} else {
+			clearInterval(timer);
+			console.log("浏览器切换走了")
+		}
+	}
+</script>
